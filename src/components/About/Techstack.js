@@ -5,14 +5,12 @@ import {
   DiReact,
   DiNodejs,
   DiMongodb,
-  DiPython,
   DiCss3Full,
-  DiHtml5,DiMysql,DiDocker,DiBootstrap
+  DiHtml5,DiMysql,DiBootstrap,DiGit
 } from "react-icons/di";
 import {
-  SiPytorch,
-  SiFirebase,
-  SiPostgresql,SiCsharp,SiTypescript
+  SiFirebase,SiNextdotjs,
+  SiPostgresql,SiCsharp,SiTypescript,SiN
   
 } from "react-icons/si";
 
