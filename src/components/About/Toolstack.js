@@ -5,7 +5,7 @@ import {
   SiVisualstudiocode,
   SiPostman,
   SiHeroku,
-  SiVercel,SiWindows,SiJira
+  SiWindows
 } from "react-icons/si";
 
 function Toolstack() {

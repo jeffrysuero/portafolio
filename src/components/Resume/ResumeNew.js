@@ -16,14 +16,6 @@ const resumeLink =
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
 
-  const [numPages, setNumPages] = useState(null);
-  const [pageNumber, setPageNumber] = useState(1);
-
-  function onDocumentLoadSuccess({ numPages }) {
-    setNumPages(numPages);
-  }
-
-
   useEffect(() => {
     setWidth(window.innerWidth);
   }, []);
