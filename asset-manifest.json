@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portafolio.github.io/static/css/main.02b12052.css",
-    "main.js": "/portafolio.github.io/static/js/main.fc1f69f3.js",
+    "main.js": "/portafolio.github.io/static/js/main.d4d8d5bd.js",
     "static/js/787.1ed0c42c.chunk.js": "/portafolio.github.io/static/js/787.1ed0c42c.chunk.js",
     "static/media/codeEditor.png": "/portafolio.github.io/static/media/codeEditor.1b585492490c8c1cace9.png",
     "static/media/blog.png": "/portafolio.github.io/static/media/blog.fb8ab7f271a937d5fc01.png",
@@ -14,11 +14,11 @@
     "static/media/pre.svg": "/portafolio.github.io/static/media/pre.d4812f51c8c80976eaab.svg",
     "index.html": "/portafolio.github.io/index.html",
     "main.02b12052.css.map": "/portafolio.github.io/static/css/main.02b12052.css.map",
-    "main.fc1f69f3.js.map": "/portafolio.github.io/static/js/main.fc1f69f3.js.map",
+    "main.d4d8d5bd.js.map": "/portafolio.github.io/static/js/main.d4d8d5bd.js.map",
     "787.1ed0c42c.chunk.js.map": "/portafolio.github.io/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.02b12052.css",
-    "static/js/main.fc1f69f3.js"
+    "static/js/main.d4d8d5bd.js"
   ]
 }
