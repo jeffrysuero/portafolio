@@ -314,7 +314,7 @@ const projects = [
         color: "orange-text-gradient",
       },
     ],
-    image: "/assets/projects/monticello.png",
+    image: `${basePath}/assets/projects/monticello.png`,
     source_code_link: "https://github.com/jeffrysuero",
     deployed_link: "https://monticello.com.do/",
   },
@@ -346,7 +346,7 @@ const projects = [
     ],
     image: `${basePath}/assets/projects/rodriel.png`,
     source_code_link: "https://github.com/jeffrysuero",
-    deployed_link: "https://gdscmvjce.vercel.app/",
+    deployed_link: "",
   },
   {
     name: "Facility Management System",
