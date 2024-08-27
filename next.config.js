@@ -30,7 +30,16 @@ const nextConfig = {
 		fileLoaderRule.exclude = /\.svg$/i;
 
 		return config;
-	}
+	},
+
+	// Add these configurations for GitHub Pages
+	assetPrefix: process.env.NODE_ENV === 'production' ? '/portafolio/' : '',
+	basePath: '/portafolio',
+	images: {
+		domains: ["res.cloudinary.com"],
+		loader: "imgix", // Use the appropriate loader for GitHub Pages
+		path: "/portafolio/_next/image", // Configure image paths for GitHub Pages
+	},
 };
 
 module.exports = nextConfig;
