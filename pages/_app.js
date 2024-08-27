@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import "@/styles/globals.css";
 
 import { PreLoader } from "@/components/Loader";
-
+const basePath = process.env.NODE_ENV === 'production' ? '/portafolio' : '';
 export default function App({ Component, pageProps }) {
 	const [loading, setLoading] = useState(true);
 	useEffect(() => {

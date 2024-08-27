@@ -8,7 +8,7 @@ import ThemeButton from "./ThemeButton";
 import Menu from "./../public/assets/icons/menu.svg";
 import Close from "./../public/assets/icons/close.svg";
 import { slideIn } from "@/utils/motion";
-
+const basePath = process.env.NODE_ENV === 'production' ? '/portafolio' : '';
 function Navbar() {
 	const [active, setActive] = useState("");
 	const [toggle, setToggle] = useState(false);
