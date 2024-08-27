@@ -1,9 +1,19 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-	output:"export",
+	output: 'export',
+ 
+	// Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
+	// trailingSlash: true,
+   
+	// Optional: Prevent automatic `/me` -> `/me/`, instead preserve `href`
+	// skipTrailingSlashRedirect: true,
+   
+	// Optional: Change the output directory `out` -> `dist`
+	 distDir: 'dist',
 	reactStrictMode: true,
 	images: {
-		domains: ["res.cloudinary.com"]
+		domains: ["res.cloudinary.com"],
+		unoptimized: true
 	},
 	webpack(config) {
 		// Grab the existing rule that handles SVG imports
@@ -31,16 +41,7 @@ const nextConfig = {
 		fileLoaderRule.exclude = /\.svg$/i;
 
 		return config;
-	},
-
-	// Add these configurations for GitHub Pages
-	assetPrefix: process.env.NODE_ENV === 'production' ? '/portafolio/' : '',
-	basePath: '/portafolio',
-	images: {
-		domains: ["res.cloudinary.com"],
-		loader: "imgix", // Use the appropriate loader for GitHub Pages
-		path: "/portafolio/_next/image", // Configure image paths for GitHub Pages
-	},
+	}
 };
 
 module.exports = nextConfig;
