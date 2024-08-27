@@ -8,7 +8,7 @@ import ProblemSolvingIcon from "./../public/assets/icons/problem-solving.svg";
 import FreelancerIcon from "./../public/assets/icons/freelance.svg";
 import BackendIcon from "./../public/assets/icons/backend.svg";
 import FullStackIcon from "./../public/assets/icons/full-stack.svg";
-
+const basePath = process.env.NODE_ENV === 'production' ? '/portafolio' : '';
 const navLinks = [
   {
     id: "about",
@@ -63,22 +63,22 @@ const technologies = {
   languages: [
     {
       name: "HTML5",
-      icon: "/assets/tech/html5.svg",
+      icon: `${basePath}/assets/tech/html5.svg`,
       link: "https://html.spec.whatwg.org/multipage/",
     },
     {
       name: "CSS3",
-      icon: "/assets/tech/css3.svg",
+      icon: `${basePath}/assets/tech/css3.svg`,
       link: "https://www.w3.org/Style/CSS/Overview.en.html",
     },
     {
       name: "JavaScript",
-      icon: "/assets/tech/javascript.svg",
+      icon: `${basePath}/assets/tech/javascript.svg`,
       link: "https://262.ecma-international.org/",
     },
     {
       name: "TypeScript",
-      icon: "/assets/tech/typescript.svg",
+      icon: `${basePath}/assets/tech/typescript.svg`,
       link: "https://www.typescriptlang.org/",
     },
     // {
@@ -98,36 +98,36 @@ const technologies = {
     // },
     {
       name: "PHP",
-      icon: "/assets/tech/php.png",
+      icon: `${basePath}/assets/tech/php.png`,
       link: "https://www.php.net/",
     },
   ],
   frameworks: [
     {
       name: "Next.js",
-      icon: "/assets/tech/nextjs.svg",
+      icon: `${basePath}/assets/tech/nextjs.svg`,
       link: "https://nextjs.org/",
     },
     {
       name: "TailwindCSS",
-      icon: "/assets/tech/tailwindcss.svg",
+      icon: `${basePath}/assets/tech/tailwindcss.svg`,
       link: "https://tailwindcss.com/",
     },
     {
       name: "Express.js",
-      icon: "/assets/tech/expressjs.png",
+      icon: `${basePath}/assets/tech/expressjs.png`,
       link: "https://expressjs.com/",
     },
     {
       name: "Laravel",
-      icon: "/assets/tech/Laravel.svg.png",
+      icon: `${basePath}/assets/tech/Laravel.svg.png`,
       link: "https://laravel.com/",
     },
   ],
   libraries: [
     {
       name: "React",
-      icon: "/assets/tech/react.svg",
+      icon: `${basePath}/assets/tech/react.svg`,
       link: "https://react.dev/",
     },
     // {
@@ -147,79 +147,79 @@ const technologies = {
     // },
     {
       name: "NextAuth.js",
-      icon: "/assets/tech/nextauthjs.png",
+      icon: `${basePath}/assets/tech/nextauthjs.png`,
       link: "https://next-auth.js.org/",
     },
     {
       name: "Prisma",
-      icon: "/assets/tech/prisma.svg",
+      icon: `${basePath}/assets/tech/prisma.svg`,
       link: "https://www.prisma.io/",
     },
   ],
   tools: [
     {
       name: "Git",
-      icon: "/assets/tech/git.svg",
+      icon: `${basePath}/assets/tech/git.svg`,
       link: "https://git-scm.com/",
     },
     {
       name: "Github",
-      icon: "/assets/icons/github.svg",
+      icon: `${basePath}/assets/icons/github.svg`,
       link: "https://github.com/",
     },
     {
       name: "Postman",
-      icon: "/assets/tech/postman.svg",
+      icon: `${basePath}/assets/tech/postman.svg`,
       link: "https://www.postman.com/",
     },
     {
       name: "Figma",
-      icon: "/assets/tech/figma.svg",
+      icon: `${basePath}/assets/tech/figma.svg`,
       link: "https://www.figma.com/",
     },
     {
       name: "Docker",
-      icon: "/assets/tech/docker.svg",
+      icon: `${basePath}/assets/tech/docker.svg`,
       link: "https://www.docker.com/",
     },
     {
       name: "AWS",
-      icon: "/assets/tech/aws.svg",
+      icon: `${basePath}/assets/tech/aws.svg`,
       link: "https://aws.amazon.com/",
     },
     {
       name: "DBEAVE",
-      icon: "/assets/tech/DBeaver_logo.svg.png",
+      icon: `${basePath}/assets/tech/DBeaver_logo.svg.png`,
       link: "https://dbeaver.io/",
     },
   ],
   environments: [
     {
       name: "Node.js",
-      icon: "/assets/tech/nodejs.svg",
+      icon: `${basePath}/assets/tech/nodejs.svg`,
       link: "https://nodejs.org/en",
     },
   ],
   databases: [
     {
       name: "MongoDB",
-      icon: "/assets/tech/mongodb.svg",
+      icon: `${basePath}/assets/tech/mongodb.svg`,
       link: "https://www.mongodb.com/",
     },
     {
       name: "Firebase",
-      icon: "/assets/tech/firebase.svg",
+      icon: `${basePath}/assets/tech/firebase.svg`,
       link: "https://firebase.google.com/",
     },
     {
       name: "MySQL",
-      icon: "/assets/tech/my-sql.png",
+      icon: `${basePath}/assets/tech/my-sql.png`,
       link: "https://www.mysql.com/",
     },
 
     {
       name: "Postgresql",
-      icon: "/assets/tech/Postgresql_elephant.svg.png",
+      icon: `${basePath}/assets/tech/Postgresql_elephant.svg.png`,
       link: "https://www.postgresql.org/",
     },
     // {
@@ -235,7 +235,7 @@ const experiences = [
   {
     title: "Full Stack Developer",
     company_name: "MAIL BOXES ETC",
-    icon: "/assets/company/mailboxes.jpeg",
+    icon: `${basePath}/assets/company/mailboxes.jpeg`,
     iconBg: "#E6DEDD",
     date: "May 2023 - Present",
     points: [
@@ -245,7 +245,7 @@ const experiences = [
   {
     title: "Full Stack Developer Freelancer",
     company_name: "Rodriel Tours",
-    icon: "/assets/company/rodriel.jpg",
+    icon: `${basePath}/assets/company/rodriel.jpg`,
     iconBg: "#E6DEDD",
     date: "June 2023",
     points: [
@@ -255,7 +255,7 @@ const experiences = [
   {
     title: "Full Stack Developer",
     company_name: "Media Revolution, SRL",
-    icon: "/assets/company/media_revolution_srl_logo.jpeg",
+    icon: `${basePath}/assets/company/media_revolution_srl_logo.jpeg`,
     iconBg: "#E6DEDD",
     date: "Dicember 2021 - mar 2023",
     points: [
@@ -344,7 +344,7 @@ const projects = [
       //   color: "yellow-text-gradient",
       // },
     ],
-    image: "/assets/projects/rodriel.png",
+    image: `${basePath}/assets/projects/rodriel.png`,
     source_code_link: "https://github.com/jeffrysuero",
     deployed_link: "https://gdscmvjce.vercel.app/",
   },
@@ -374,7 +374,7 @@ const projects = [
       //   color: "yellow-text-gradient",
       // },
     ],
-    image: "/assets/projects/tapin.png",
+    image: `${basePath}/assets/projects/tapin.png`,
     source_code_link:
       "https://github.com/jeffrysuero",
     deployed_link:
