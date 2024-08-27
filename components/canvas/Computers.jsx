@@ -10,9 +10,10 @@ import { Suspense } from "react";
 
 import CanvasLoader from "../Loader";
 import ComputerModel from "./models/ComputerModel";
+const basePath = process.env.NODE_ENV === 'production' ? '/portafolio' : '';
 
 function Computers({ isMobile }) {
-  const { nodes, materials } = useGLTF("/models/desktop_pc/scene.gltf");
+  const { nodes, materials } = useGLTF(`${basePath}/models/desktop_pc/scene.gltf`);
 
   return (
     <>

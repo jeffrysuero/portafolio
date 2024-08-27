@@ -5,9 +5,10 @@ import * as THREE from "three";
 
 import CanvasLoader from "../Loader";
 import EarthModel from "./models/EarthModel";
+const basePath = process.env.NODE_ENV === 'production' ? '/portafolio' : '';
 
 function Earth({ isMobile }) {
-  const { nodes, materials } = useGLTF("models/planet/scene.gltf");
+  const { nodes, materials } = useGLTF(`${basePath}/models/planet/scene.gltf`);
   const earthRef = useRef();
 
   useFrame(() => {
