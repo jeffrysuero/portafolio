@@ -26,7 +26,7 @@ export default function App({ Component, pageProps }) {
 	const title = "Portfolio | Jeffry Suero";
 	const description =
 		"Hello! I'm Jeffry Suero, a passionate web developer and problem solver. Welcome to my portfolio";
-	const avatar = "/assets/avatar2.jpeg";
+	const avatar = `${basePath}/assets/avatar2.jpeg`;
 	const url = "";
 
 	return (
@@ -57,23 +57,23 @@ export default function App({ Component, pageProps }) {
 				<link
 					rel="apple-touch-icon"
 					sizes="180x180"
-					href="/assets/avatar2.jpeg"
+					href={`${basePath}/assets/avatar2.jpeg`}
 				/>
 				<link
 					rel="icon"
 					type="image/png"
 					sizes="32x32"
-					href="/assets/avatar2.jpeg"
+					href={`${basePath}/assets/avatar2.jpeg`}
 				/>
 				<link
 					rel="icon"
 					type="image/png"
 					sizes="16x16"
-					href="/assets/avatar2.jpeg"
+					href={`${basePath}/assets/avatar2.jpeg`}
 				/>
 				<link
 					rel="manifest"
-					href="/assets/avatar2.jpeg"
+					href={`${basePath}/assets/avatar2.jpeg`}
 				/>
 			</Head>
 

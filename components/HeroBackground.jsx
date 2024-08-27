@@ -13,7 +13,7 @@ function HeroBackground() {
       <Mountain2 className="w-full h-[464px] wave top-[160px]" />
       <div className="w-full h-[1503px] wave top-[-200px]">
         <Image
-          src={"/assets/background/blur-layer.png"}
+          src={`${basePath}/assets/background/blur-layer.png`}
           alt="blur-layer"
           fill={true}
         />
